@@ -14,13 +14,13 @@ public class App {
 
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+
         System.out.print("What is your current age? ");
-        Scanner age = new Scanner(System.in);
-        String strage = age.next();
+        String strage = scan.next();
 
         System.out.print("At what age would you like to retire? ");
-        Scanner retireage = new Scanner(System.in);
-        String strretireage = retireage.next();
+        String strretireage = scan.next();
 
         int age1 = Integer.parseInt(strage);
         int age2 = Integer.parseInt(strretireage);
